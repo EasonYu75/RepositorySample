@@ -11,12 +11,12 @@ namespace Sample
 {
     class Program
     {
-        private IEmployeeService EmployeeService = new EmployeeService();
+        private static IEmployeeService EmployeeService = new EmployeeService();
         static void Main(string[] args)
         {
-            //Employee employee = EmployeeService.GetEmployee("1");
+            Employee employee = EmployeeService.GetEmployee("1");
 
-            //IEnumerable<Employee> employees = EmployeeService.GetEmployees();
+            IEnumerable<Employee> employees = EmployeeService.GetEmployees();
         }
     }
 }
