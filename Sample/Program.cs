@@ -14,9 +14,20 @@ namespace Sample
         private static IEmployeeService EmployeeService = new EmployeeService();
         static void Main(string[] args)
         {
-            Employee employee = EmployeeService.GetEmployee("1");
+            //Employee employee = EmployeeService.GetEmployee("1");
 
-            IEnumerable<Employee> employees = EmployeeService.GetEmployees();
+            //IEnumerable<Employee> employees = EmployeeService.GetEmployees();
+
+            string[] t = new string[96];
+
+            for(int i = 1; i<=96; i++)
+            {
+                t[i - 1] = i.ToString();
+            }
+
+            Console.WriteLine(string.Join(",", t));
+
+            Console.Read();
         }
     }
 }
