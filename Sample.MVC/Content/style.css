@@ -1,28 +1,77 @@
-html,body{height:100%;padding:0}
+html, body {
+    height: 100%;
+    padding: 0
+}
 
 body {
-
     color: #333;
     margin: 0px;
     padding: 0px;
     font-size: 14px;
     line-height: 1.2;
     font-family: 'Lato', sans-serif;
-    background-color:#fff ;
-    overflow:hidden;
+    background-color: #fff;
+    /*overflow:hidden;*/
     overflow-x: hidden;
-background: url(../images/poly_bg.jpg)no-repeat;
+    background: url(../images/poly_bg.jpg)no-repeat;
 }
 
-canvas{	position: absolute;top: 0;left: 0;right: 0;bottom: 0;height: 100%;width: 100%;}
-.text-home{display:table-cell;vertical-align:middle;width: 403px;height:600px;text-align:center;}
-.maj{text-transform:uppercase}
-.home-container{height:100%;position: relative;}
-.main-content{display:table;vertical-align:middle;margin-right: auto;margin-left: auto;text-align:center;}
-.chaffle{background:none;background-color:transparent;color:#000;float:left}
-.nav > li > a:hover, .nav > li > a:focus {text-decoration: none;background-color: transparent;color:#000;}
-.nav {padding-left: 3em;}
- .line {top: 0;left: 0;right: 0;width: 30px;margin: 1em auto;border: 1px solid rgba(50, 50, 50, 0.9);}
+.canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/*.text-home{display:table-cell;vertical-align:middle;width: 403px;height:600px;text-align:center;}*/
+.text-home {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.maj {
+    text-transform: uppercase
+}
+
+.home-container {
+    height: 100%;
+    position: relative;
+}
+
+.main-content {
+    display: table;
+    vertical-align: middle;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.chaffle {
+    background: none;
+    background-color: transparent;
+    color: #000;
+    float: left
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    color: #000;
+}
+
+.nav {
+    padding-left: 3em;
+}
+
+.line {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 30px;
+    margin: 1em auto;
+    border: 1px solid rgba(50, 50, 50, 0.9);
+}
 /*!
  * Start Bootstrap - Simple Sidebar HTML Template (https://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -39,9 +88,9 @@ canvas{	position: absolute;top: 0;left: 0;right: 0;bottom: 0;height: 100%;width:
     transition: all 0.5s ease;
 }
 
-#wrapper.toggled {
-    padding-left: 250px;
-}
+    #wrapper.toggled {
+        padding-left: 250px;
+    }
 
 #sidebar-wrapper {
     z-index: 1000;
@@ -83,51 +132,51 @@ canvas{	position: absolute;top: 0;left: 0;right: 0;bottom: 0;height: 100%;width:
     list-style: none;
 }
 
-.sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
-}
+    .sidebar-nav li {
+        text-indent: 20px;
+        line-height: 40px;
+    }
 
-.sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #999999;
-}
+        .sidebar-nav li a {
+            display: block;
+            text-decoration: none;
+            color: #999999;
+        }
 
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
-}
+            .sidebar-nav li a:hover {
+                text-decoration: none;
+                color: #fff;
+                background: rgba(255,255,255,0.2);
+            }
 
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
-}
+            .sidebar-nav li a:active,
+            .sidebar-nav li a:focus {
+                text-decoration: none;
+            }
 
-.sidebar-nav > .sidebar-brand {
-    height: 65px;
-    font-size: 18px;
-    line-height: 60px;
-}
+    .sidebar-nav > .sidebar-brand {
+        height: 65px;
+        font-size: 18px;
+        line-height: 60px;
+    }
 
-.sidebar-nav > .sidebar-brand a {
-    color: #999999;
-}
+        .sidebar-nav > .sidebar-brand a {
+            color: #999999;
+        }
 
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
-}
+            .sidebar-nav > .sidebar-brand a:hover {
+                color: #fff;
+                background: none;
+            }
 
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
     }
 
-    #wrapper.toggled {
-        padding-left: 0;
-    }
+        #wrapper.toggled {
+            padding-left: 0;
+        }
 
     #sidebar-wrapper {
         width: 250px;

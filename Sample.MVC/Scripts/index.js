@@ -6,17 +6,17 @@ function goTo(element) {
 
 //Menu latéral toggle & lettring
 jQuery(function() {
-	
+    $("#wrapper").toggleClass("toggled");
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
-    $(document).ready(function() {
-     $('.chaffle').chaffle({
-      speed: 20,
-      time: 140
-    });
-   });
+   // $(document).ready(function() {
+   //  $('.chaffle').chaffle({
+   //   speed: 20,
+   //   time: 140
+   // });
+   //});
 });
 
 //effets background particules
@@ -30,9 +30,9 @@ jQuery(function() {
         }, 1000);
     }).call(this);
 
-    $(window).on('resize', function() {
-        reinit();
-    });
+    //$(window).on('resize', function() {
+    //    reinit();
+    //});
 
 //CANVAS
     $(function() {
